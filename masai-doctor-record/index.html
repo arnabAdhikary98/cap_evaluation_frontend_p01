@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Masai Doctor Records</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jost&family=Poppins:wght@200&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!-- Use this form for data input  -->
+    <div class="left-side-bar">
+      <form id="doctorForm">
+        <p>Doctor Name</p>
+        <input placeholder="Name" type="text" id="name" />
+        <p>Doctor ID</p>
+        <input placeholder="Doctor ID" type="text" id="doctor_id" />
+        <p>Specialization</p>
+        <select id="specialization">
+          <option value="">Select Specialization</option>
+          <option value="Dermatologist">Dermatologist</option>
+          <option value="Dentist">Dentist</option>
+          <option value="Gynecologist">Gynecologist</option>
+        </select>
+        <p>Experience</p>
+        <input placeholder="Experience" type="number" id="experience" />
+        <p>Email Address</p>
+        <input placeholder="Email" type="email" id="email" />
+        <p>Mobile Number</p>
+        <input placeholder="Mobile No." type="number" id="mobile" />
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+
+    <!-- Use this Select tag for filter part  -->
+    <div class="right-side-bar">
+      <select id="filter">
+        <option value="">Select Specialization</option>
+        <option value="Dermatologist">Dermatologist</option>
+        <option value="Dentist">Dentist</option>
+        <option value="Gynecologist">Gynecologist</option>
+      </select>
+      <table id="doctorTable">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Doctor ID</th>
+            <th>Specialization</th>
+            <th>Experience in Years</th>
+            <th>Email</th>
+            <th>Mobile No</th>
+            <th>Role</th>
+            <th>Delete</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Append Rows here using JS & DOM  -->
+        </tbody>
+    </div>
+  </body>
+  <script src="./index.js"></script>
+</html>
